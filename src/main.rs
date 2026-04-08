@@ -1,7 +1,11 @@
 mod parser;
+mod csv_reader;
+
+use csv_reader::CsvReader;
 
 fn main() {
-    let line = "Alice,30,Engineer";
-    let fields = parser::parse_line(line, ',');
-    println!("Parsed: {:?}", fields);
+    match CsvReader::from_file("data/sample.csv", ',') {
+        Ok(csv) => csv.print(),
+        Err(e) => eprintln!("Error reading file: {}", e),
+    }
 }
