@@ -1,5 +1,3 @@
-/// Parses a single CSV line into a vector of fields.
-/// Handles quoted fields (e.g. "hello, world").
 pub fn parse_line(line: &str, delimiter: char) -> Vec<String> {
     let mut fields = Vec::new();
     let mut current = String::new();
