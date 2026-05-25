@@ -20,6 +20,6 @@ fn main() {
     println!("\n== Filter: occupation = Developer ==");
     print_filtered(&csv, "occupation", "Developer");
 
-    println!("\n=== Filter: age = 30 ===");
+    println!("\n== Filter: age = 30 ==");
     print_filtered(&csv, "age", "30");
 }
