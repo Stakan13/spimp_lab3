@@ -14,7 +14,7 @@ fn main() {
         }
     };
 
-    println!("== All records ==");
+    println!("=== All records ===");
     csv.print();
 
     println!("\n== Filter: occupation = Developer ==");
