@@ -14,10 +14,10 @@ fn main() {
         }
     };
 
-    println!("=== All records ===");
+    println!("== All records ==");
     csv.print();
 
-    println!("\n=== Filter: occupation = Developer ===");
+    println!("\n== Filter: occupation = Developer ==");
     print_filtered(&csv, "occupation", "Developer");
 
     println!("\n=== Filter: age = 30 ===");
